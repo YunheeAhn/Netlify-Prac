@@ -13,7 +13,7 @@ import Layout, { LayoutNone } from "./components/layout/Layout";
 const Routers = () => {
     return(
 
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route element={<Layout />}>
                     <Route path="/" element={<Home/>}  />
